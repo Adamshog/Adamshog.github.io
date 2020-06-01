@@ -403,8 +403,8 @@
 
 	
 	//Contact Form Validation
-	if($('adamshog2000@gmail.com').length){
-		$('adamshog2000@gmail.com').validate({
+	if($('#contact form').length){
+	    $('#contact form').validate({
 			rules: {
 				username: {
 					required: true
