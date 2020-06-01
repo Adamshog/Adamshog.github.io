@@ -2758,7 +2758,6 @@ img{
 	line-height:1.9em;
 	margin-top:12px;
 	margin-bottom:10px;
-    background-color:aliceblue;
 }
 
 .service-block .inner-box .lower-content .read-more{
@@ -2893,6 +2892,11 @@ img{
     -o-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     transition: all 500ms ease;
+}
+
+.lower-content{
+    background-color:aliceblue;
+    text-align:left;
 }
 
 .service-block-two .inner-box .content .read-more{

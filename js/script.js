@@ -403,8 +403,8 @@
 
 	
 	//Contact Form Validation
-	if($('#contact form').length){
-	    $('#contact form').validate({
+	if ($('#contact-form').length) {
+	    $('#contact-form').validate({
 			rules: {
 				username: {
 					required: true
