@@ -1,0 +1,36 @@
+<?php include('form_process.php');?>
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+<div class="container">
+    <form id="contact" action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
+        <h3>Quick Contact</h3>
+        <h4>Contact us today, and get reply with in 24 hours!</h4>
+        <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" name="name" value="<? $name?>" autofocus>
+        </fieldset>
+        <span class="error"> <?= $name_error ?> </span>
+        <fieldset>
+            <input placeholder="Your Email Address" type="text" name="email" value="<? $email?>" tabindex="2">
+        </fieldset>
+        <span class="error"><?= $email_error ?> </span>
+        <fieldset>
+            <input placeholder="Your Phone Number" type="text" name="phone" value="<? $phone?>" tabindex="3">
+        </fieldset>
+        <span class="error"><?= $phone_error ?> </span>
+        <fieldset>
+            <input placeholder="Your Web Site starts with http://" type="text" tabindex="4" name="url" value="<? $url?>" tabindex="4">
+        </fieldset>
+        <span class="error"><?= $url_error ?> </span>
+        <fieldset>
+            <textarea placeholder="Type your Message Here....!" type="text" name="message" value="<? $message?>" tabindex="5"></textarea>
+        </fieldset>
+        <div class="succcess">
+            <?= $success; ?>
+        </div>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+    </form>
+
+
+</div>
